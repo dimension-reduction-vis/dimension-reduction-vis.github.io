@@ -1,1 +1,536 @@
-[{"name":"Selecting good views of high-dimensional data using class consistency","venue":"EuroVis","year":2009,"VIS":["Data Processing4VIS"],"ML":["Clustering"]},{"name":"Behavior-Driven Visualization Recommendation","venue":"IUI","year":2009,"VIS":["Data-VIS Mapping"],"ML":["Classification"]},{"name":"Revision: Automated classification, analysis and redesign of chart images","venue":"UIST","year":2011,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"VizDeck: self-organizing dashboards for visual analytics","venue":"SIGMOD","year":2012,"VIS":["Data-VIS Mapping"],"ML":["Classification"]},{"name":"User-Adaptive Information Visualization - Using Eye Gaze Data to Infer Visualization Tasks and User Cognitive Abilities","venue":"IUI","year":2013,"VIS":["User Profiling"],"ML":["Classification"]},{"name":"Finding waldo: Learning about users from their interactions","venue":"TVCG","year":2014,"VIS":["User Profiling"],"ML":["Classification"]},{"name":"Prediction of Users’ Learning Curves for Adaptation while Using an Information Visualization","venue":"IUI","year":2014,"VIS":["User Profiling"],"ML":["Regression"]},{"name":"Towards facilitating user skill acquisition: identifying untrained visualization users through eye tracking","venue":"IUI","year":2014,"VIS":["User Profiling"],"ML":["Classification"]},{"name":"Data-driven evaluation of visual quality measures","venue":"CGF","year":2015,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"VizRec: Recommending personalized visualizations","venue":"TiiS","year":2016,"VIS":["Data-VIS Mapping"],"ML":["Regression"]},{"name":"SepMe: 2002 New Visual Separation Measures","venue":"PVis","year":2016,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"FigureSeer: Parsing Result-Figures in Research Papers","venue":"ECCV","year":2016,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"A Diagram Is Worth A Dozen Images","venue":"ECCV","year":2016,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Automatic Summary Generation for Scientific Data Charts","venue":"AAAI","year":2016,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Approximated and user steerable tSNE for progressive visual analytics","venue":"TVCG","year":2016,"VIS":["Data Processing4VIS"],"ML":["Dimension Reduction"]},{"name":"Extracting and Retargeting Color Mappings from Bitmap Images of Visualizations","venue":"VIS","year":2017,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization","venue":"VIS","year":2017,"VIS":["Style Imitation"],"ML":["Regression"]},{"name":"Learning Visual Importance for Graphic Designs and Data Visualizations","venue":"UIST","year":2017,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"See Without Looking: Joint Visualization of Sensitive Multi-site Datasets","venue":"IJCAI","year":2017,"VIS":["Data Processing4VIS"],"ML":["Dimension Reduction"]},{"name":"Graph Layouts by t-SNE","venue":"EuroVis","year":2017,"VIS":["Data-VIS Mapping"],"ML":["Dimension Reduction"]},{"name":"Reverse-Engineering Visualizations: Recovering Visual Encodings from Chart Images","venue":"EuroVis","year":2017,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"ChartSense: Interactive Data Extraction from Chart Images","venue":"CHI","year":2017,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Understanding Infographics through Textual and Visual Tag Prediction","venue":"arxiv","year":2017,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"A machine learning approach for semantic structuring of scientific charts in scholarly documents","venue":"AAAI","year":2017,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"ShapeSearch: Flexible Pattern-based Querying of Trend Line Visualizations","venue":"VLDB","year":2018,"VIS":["User Profiling","VIS Interaction"],"ML":["Classification"]},{"name":"An Analysis of Automated Visual Analysis Classification: Interactive Visualization Task Inference of Cancer Genomics Domain Experts","venue":"VIS","year":2018,"VIS":["User Profiling"],"ML":["Classification"]},{"name":"Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco","venue":"VIS","year":2018,"VIS":["Data-VIS Mapping"],"ML":["Classification","Regression"]},{"name":"A Generative Model for Volume Rendering","venue":"VIS","year":2018,"VIS":["Data-VIS Mapping"],"ML":["Generative"]},{"name":"A Perception-Driven Approach to Supervised Dimensionality Reduction for Visualization","venue":"VIS","year":2018,"VIS":["Data Processing4VIS"],"ML":["Dimension Reduction"]},{"name":"Evaluating ‘Graphical Perception’ with CNNs","venue":"VIS","year":2018,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"DeepEye: Creating Good Data Visualizations by Keyword Search","venue":"SIGMOD","year":2018,"VIS":["Insight Communication"],"ML":["Classification","Regression"]},{"name":"Next-Step Suggestions for Modern Interactive Data Analysis Platforms","venue":"KDD","year":2018,"VIS":["User Profiling"],"ML":["Generative"]},{"name":"JUMP: A Joint Predictor for User Click and Dwell Time","venue":"IJCAI","year":2018,"VIS":["User Profiling"],"ML":["Regression"]},{"name":"FIGUREQA: AN ANNOTATED FIGURE DATASET FOR VISUAL REASONING","venue":"ICLR","year":2018,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"DeepEye: Towards Automatic Data Visualization","venue":"ICDE","year":2018,"VIS":["Data-VIS Mapping"],"ML":["Classification"]},{"name":"Fast and accurate CNN-based brushing in scatterplots","venue":"EuroVis","year":2018,"VIS":["VIS Interaction"],"ML":["Classification"]},{"name":"Interactive Visual Exploration of Local Patterns in Large Scatterplot Spaces","venue":"EuroVis","year":2018,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"DVQA: Understanding Data Visualizations via Question Answering","venue":"CVPR","year":2018,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"Dynamic Graph Generation Network: Generating Relational Knowledge From Diagrams","venue":"CVPR","year":2018,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Beagle: Automated Extraction and Interpretation of Visualizations from the Web","venue":"CHI","year":2018,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Data2Vis: Automatic Generation of Data Visualizations Using Sequence to Sequence Recurrent Neural Networks","venue":"CGA","year":2018,"VIS":["Data-VIS Mapping"],"ML":["Classification"]},{"name":"Evaluating the Readability of Force Directed Graph Layouts: A Deep Learning Approach","venue":"CGA","year":2018,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"Synthetically Trained Icon Proposals for Parsing and Summarizing Infographics","venue":"arxiv","year":2018,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"FlowSense: A Natural Language Interface for Visual Data Exploration within a Dataflow System","venue":"VIS","year":2019,"VIS":["VIS Interaction"],"ML":["Regression"]},{"name":"InSituNet: Deep Image Synthesis for Parameter Space Exploration of Ensemble Simulations","venue":"VIS","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Generative"]},{"name":"LassoNet: Deep Lasso-Selection of 3D Point Clouds","venue":"VIS","year":2019,"VIS":["VIS Interaction"],"ML":["Classification"]},{"name":"TSR-TVD: Temporal Super-Resolution for Time-Varying Data Analysis and Visualization","venue":"VIS","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Generative"]},{"name":"GenerativeMap: Visualization and Exploration of Dynamic Density Maps via Generative Learning Model","venue":"VIS","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Generative"]},{"name":"A Deep Generative Model for Graph Layout","venue":"VIS","year":2019,"VIS":["Style Imitation"],"ML":["Generative"]},{"name":"DeepDrawing: A Deep Learning Approach to Graph Drawing","venue":"VIS","year":2019,"VIS":["Style Imitation"],"ML":["Regression"]},{"name":"FlowNet: A Deep Learning Framework for Clustering and Selection of Streamlines and Stream Surfaces","venue":"VIS","year":2019,"VIS":["VIS Interaction"],"ML":["Clustering","Dimension Reduction"]},{"name":"A Markov Model of Users’ Interactive Behavior in Scatterplots","venue":"VIS","year":2019,"VIS":["User Profiling"],"ML":["Generative"]},{"name":"An Incremental Dimensionality Reduction Method for Visualizing Streaming Multidimensional Data","venue":"VIS","year":2019,"VIS":["Data Processing4VIS"],"ML":["Dimension Reduction"]},{"name":"Visualization Assessment: A Machine Learning Approach","venue":"VIS","year":2019,"VIS":["VIS Reading"],"ML":["Dimension Reduction","Regression"]},{"name":"A Deep Learning Approach to Selecting Representative Time Steps for Time-Varying Multivariate Data","venue":"VIS","year":2019,"VIS":["VIS Reading"],"ML":["Dimension Reduction"]},{"name":"Disentangled Representation of Data Distributions in Scatterplots","venue":"VIS","year":2019,"VIS":["VIS Reading"],"ML":["Dimension Reduction","Regression"]},{"name":"ScatterNet: A Deep Subjective Similarity Model for Visual Analysis of Scatterplots","venue":"VIS","year":2019,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"DataShot: Automatic Generation of Fact Sheet from Tabular Data","venue":"VIS","year":2019,"VIS":["Insight Communication"],"ML":["Classification"]},{"name":"Text-to-Viz: Automatic Generation of Infographics from Natural Language Statements","venue":"VIS","year":2019,"VIS":["Insight Communication"],"ML":["Classification"]},{"name":"Towards Automated Infographic Design: Deep Learning-based Auto-Generation of Extensible Timeline","venue":"VIS","year":2019,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"DeepOrganNet: On-the-Fly Reconstruction and Visualization of 3D / 4D Lung Models from Single-View Projections by Deep Deformation Network","venue":"VIS","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Regression"]},{"name":"Color Crafting: Automating the Construction of Designer Quality Color Ramps","venue":"VIS","year":2019,"VIS":["Style Imitation"],"ML":["Clustering"]},{"name":"A Natural-language-based Visual Query Approach of Uncertain Human Trajectories","venue":"VIS","year":2019,"VIS":["VIS Interaction"],"ML":["Dimension Reduction"]},{"name":"DNN-VolVis: Interactive Volume Visualization Supported by Deep Neural Network","venue":"PVis","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Generative"]},{"name":"On KDE-based brushing in scatterplots and how it compares to CNN-based brushing","venue":"EuroVis","year":2019,"VIS":["VIS Interaction"],"ML":["Clustering"]},{"name":"Follow The Clicks: Learning and Anticipating Mouse Interactions During Exploratory Data Analysis","venue":"EuroVis","year":2019,"VIS":["User Profiling"],"ML":["Generative"]},{"name":"ClustMe: A Visual Quality Measure for Ranking Monochrome Scatterplots based on Cluster Patterns","venue":"EuroVis","year":2019,"VIS":["VIS Reading"],"ML":["Clustering","Generative"]},{"name":"Online Learning of Visualization Preferences through Dueling Bandits for Enhancing Visualization Recommendations","venue":"EuroVis","year":2019,"VIS":["Data-VIS Mapping","VIS Reading"],"ML":["Reinforcement"]},{"name":"VizML: A Machine Learning Approach to Visualization Recommendation","venue":"CHI","year":2019,"VIS":["Data-VIS Mapping"],"ML":["Classification"]},{"name":"Personalized Sketch-Based Brushing in Scatterplots","venue":"CGA","year":2019,"VIS":["VIS Interaction"],"ML":["Classification"]},{"name":"Answering Questions about Data Visualizations using Efficient Bimodal Fusion","venue":"arxiv","year":2019,"VIS":["VIS Reading"],"ML":["Classification"]},{"name":"Continuous Prefetch for Interactive Data Applications","venue":"VLDB","year":2020,"VIS":["User Profiling"],"ML":["Generative"]},{"name":"VisCode: Embedding Information in Visualization Images using\nEncoder-Decoder Network","venue":"VIS","year":2020,"VIS":["VIS Reading"],"ML":["Generative","Regression"]},{"name":"MobileVisFixer: Tailoring Web Visualizations for Mobile Phones Leveraging an Explainable Reinforcement Learning Framework","venue":"VIS","year":2020,"VIS":["Style Imitation"],"ML":["Reinforcement"]},{"name":"PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning","venue":"VIS","year":2020,"VIS":["Style Imitation"],"ML":["Reinforcement"]},{"name":"Retrieve-Then-Adapt: Example-based Automatic Generation for Proportion-related Infographics","venue":"VIS","year":2020,"VIS":["Insight Communication"],"ML":["Classification"]},{"name":"VC-Net: Deep Volume-Composition Networks for Segmentation and Visualization of Highly Sparse and Noisy Image Data","venue":"VIS","year":2020,"VIS":["Data Processing4VIS"],"ML":["Classification"]},{"name":"VizCommender","venue":"VIS","year":2020,"VIS":["VIS Reading"],"ML":["Generative"]},{"name":"Predicting Visual Importance Across Graphic Design Types","venue":"UIST","year":2020,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"Toward automatic comparison of visualization techniques: Application to graph visualization","venue":"PacificVis","year":2020,"VIS":["VIS Reading"],"ML":["Regression"]},{"name":"AutoCaption: An Approach to Generate Natural Language Description from Visualization Automatically","venue":"PacificVis","year":2020,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"Interactive Cleaning for Progressive Visualization through Composite Questions","venue":"ICDE","year":2020,"VIS":["Data Processing4VIS"],"ML":["Classification","Semi Supervised"]},{"name":"Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning","venue":"EuroVis","year":2020,"VIS":["VIS Interaction"],"ML":["Dimension Reduction","Classification","Semi Supervised"]},{"name":"ICONATE: Automatic Compound Icon Generation and Ideation","venue":"CHI","year":2020,"VIS":["Style Imitation"],"ML":["Dimension Reduction"]},{"name":"Automatic Annotation Synchronizing with Textual Description for Visualization","venue":"CHI","year":2020,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"Answering Questions about Charts and Generating Visual Explanations","venue":"CHI","year":2020,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"Exploring Visual Information Flows in Infographics","venue":"CHI","year":2020,"VIS":["VIS Reading"],"ML":["Classification","Regression"]},{"name":"Table2Charts: Learning Shared Representations for Recommending Charts on Multi-dimensional Data","venue":"arxiv","year":2020,"VIS":["Data-VIS Mapping"],"ML":["Reinforcement"]}]
+[
+    {
+        "name": "Raspberry, Rape, Thyme, Sunflower and Mint Honeys Authentication Using Voltammetric Tongue",
+        "venue": "Sensors",
+        "subject_area": "phys",
+        "ref": "pauliuc2020raspberry",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "tl",
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sc",
+            "mc"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Quantitative analysis of SERS spectra of MnSOD over fluctuated aptamer signals using multivariate statistics",
+        "venue": "Nanophotonics",
+        "subject_area": "phys",
+        "ref": "yasukuni2019quantitative",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gr",
+            "gs"
+        ],
+        "interpretation": [
+            "mc",
+            "gp"
+        ],
+        "year": 2019
+    },
+    {
+        "name": "Principal Component Analysis as a Statistical Tool for Concrete Mix Design",
+        "venue": "Materials",
+        "subject_area": "phys",
+        "ref": "kobaka2021principal",
+        "vis": [
+            "3d",
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sp",
+            "mp",
+            "sc",
+            "rov"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "In Situ X-ray Diffraction Study of Xe and CO2 Adsorption in Y Zeolite: Comparison between Rietveld and PCA-Based Analysis",
+        "venue": "Crystals",
+        "subject_area": "phys",
+        "ref": "conterosito2020situ",
+        "vis": [
+            "2d",
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "sm"
+        ],
+        "interpretation": [
+            "sc",
+            "gp",
+            "rov"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Event generation and statistical sampling for physics with deep generative models and a density information buffer",
+        "venue": "Nature Communications",
+        "subject_area": "phys",
+        "ref": "otten2021event",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "other"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "gs"
+        ],
+        "interpretation": [
+            "sp",
+            "gp"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "The Use of UV Spectroscopy and SIMCA for the Authentication of Indonesian Honeys According to Botanical, Entomological and Geographical Origins",
+        "venue": "Molecules",
+        "subject_area": "chem",
+        "ref": "suhandy2021use",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gs",
+            "sm"
+        ],
+        "interpretation": [
+            "sc",
+            "mc",
+            "gp"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "Research on the application of liquid-liquid extraction-gas chromatography-mass spectrometry (LLE-GC-MS) and headspace-gas chromatography-ion mobility spectrometry (HS-GC-IMS) in distinguishing the Baiyunbian aged liquors",
+        "venue": "International Journal of Food Engineering",
+        "subject_area": "chem",
+        "ref": "zhou2020research",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "tl",
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax"
+        ],
+        "interpretation": [
+            "sc",
+            "mc",
+            "gp"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Metabolite Fingerprinting Using 1H-NMR Spectroscopy and Chemometrics for Classification of Three Curcuma Species from Different Origins",
+        "venue": "Molecules",
+        "subject_area": "chem",
+        "ref": "nurani2021metabolite",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "other"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gs",
+            "sm"
+        ],
+        "interpretation": [
+            "sc",
+            "mc",
+            "gp"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "Mass Spectrometry Imaging Shows Modafinil, A Student Study Drug, Changes the Lipid Composition of the Fly Brain",
+        "venue": "Angewandte Chemie",
+        "subject_area": "chem",
+        "ref": "philipsen2021mass",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "tl",
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "ax"
+        ],
+        "interpretation": [
+            "mc"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "Comparison of hydrothermal carbonization and torrefaction of azolla biomass: Analysis of the solid products",
+        "venue": "Journal of Analytical and Applied Pyrolysis",
+        "subject_area": "chem",
+        "ref": "babinszki2020comparison",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "mc",
+            "gp"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Principal component analysis-aided statistical process optimisation (PASPO) for process improvement in industrial refineries",
+        "venue": "Journal of Cleaner Production",
+        "subject_area": "busi",
+        "ref": "teng2019principal",
+        "vis": [
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sc"
+        ],
+        "year": 2019
+    },
+    {
+        "name": "Power consumption estimation for mask image projection stereolithography additive manufacturing using machine learning based approach",
+        "venue": "Journal of Cleaner Production",
+        "subject_area": "busi",
+        "ref": "yang2020power",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "sm"
+        ],
+        "interpretation": [
+            "gp",
+            "rov"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Integrated Thinking: Measuring the Unobservable",
+        "venue": "Meditari Accountancy Research",
+        "subject_area": "busi",
+        "ref": "malafronte2021integrated",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "other"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sc",
+            "mc",
+            "rov"
+        ],
+        "year": 2021
+    },
+    {
+        "name": "Exploring brand management strategies in Chinese manufacturing industry    ",
+        "venue": "Journal of Brand Management",
+        "subject_area": "busi",
+        "ref": "lin2020exploring",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "other"
+        ],
+        "annotation": [
+            "tl",
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sp",
+            "sc",
+            "mc"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Assessing the energy security of European countries in the resource and economic context",
+        "venue": "Oeconomia Copernicana",
+        "subject_area": "busi",
+        "ref": "jonek2022assessing",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "sp",
+            "mp",
+            "sc",
+            "mc",
+            "ou"
+        ],
+        "year": 2022
+    },
+    {
+        "name": "Activation of JUN in fibroblasts promotes pro-fibrotic programme and modulates protective immunity",
+        "venue": "Nature Communications",
+        "subject_area": "bio",
+        "ref": "cui2020activation",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "pca",
+            "tsne"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gr",
+            "sm"
+        ],
+        "interpretation": [
+            "mp",
+            "sc",
+            "mc",
+            "rov"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Antibody profiling of patients with prostate cancer reveals differences in antibody signatures among disease stages",
+        "venue": "Journal for ImmunoTherapy of Cancer",
+        "subject_area": "bio",
+        "ref": "potluri2020antibody",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gs"
+        ],
+        "interpretation": [
+            "sc",
+            "mc"
+        ],
+        "year": 2020
+    },
+    {
+        "name": "Cas9-induced large deletions and small indels are controlled in a convergent fashion",
+        "venue": "Nature Communications",
+        "subject_area": "bio",
+        "ref": "kosicki2022cas9",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "other"
+        ],
+        "annotation": [
+            "tl",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gs",
+            "sm"
+        ],
+        "interpretation": [
+            "mc",
+            "gp",
+            "rov"
+        ],
+        "year": 2022
+    },
+    {
+        "name": "Spatiotemporal reprogramming of differentiated cells underlies regeneration and neoplasia in the intestinal epithelium",
+        "venue": "Nature Communications",
+        "subject_area": "bio",
+        "ref": "higa2022spatiotemporal",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "tsne"
+        ],
+        "annotation": [
+            "tl",
+            "hi",
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "sm"
+        ],
+        "interpretation": [
+            "sp",
+            "sc",
+            "mc",
+            "rov"
+        ],
+        "year": 2022
+    },
+    {
+        "name": "Whole cell MALDI fingerprinting is a robust tool for differential profiling of two component mammalian cell mixtures",
+        "venue": "Journal of the American Society for Mass Spectrometry",
+        "subject_area": "bio",
+        "ref": "petukhova2018whole",
+        "vis": [
+            "3d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "ca"
+        ],
+        "style": [
+            "le",
+            "ax",
+            "gr"
+        ],
+        "interpretation": [
+            "mc",
+            "rov"
+        ],
+        "year": 2018
+    }
+]

@@ -18,7 +18,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         },
         card: {
             width: 300,
-            height: 200
+            height: 400
         },
         cardContent: {
             display: 'flex',
@@ -73,6 +73,9 @@ export const useStyles = makeStyles((theme: Theme) =>
         },
         avatarGroup: {
             // margin: "0px 6px"
+        },
+        media: {
+            height: 200,
         }
     })
 );

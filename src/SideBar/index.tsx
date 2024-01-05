@@ -19,7 +19,7 @@ import Select from '@material-ui/core/Select';
 import { getAvatar } from '../index'
 import { useStyles } from "./style";
 
-import { ChartModal, TPaperMatrix } from '../ChartModal'
+import { ChartModal} from '../ChartModal'
 
 const VISTagDetails = {
   "Data Processing4VIS": "raw data is transformed into a format that better suits the following visualization processes.",
@@ -38,16 +38,15 @@ interface Props {
   MLTags: Record<string, boolean>;
   paperYear: Record<string, number>;
   paperArea: Record<string, number>;
-  paperMatrix: TPaperMatrix;
   mobileOpen: boolean;
   handleDrawerToggle: () => void;
-  onClickFilter: (k: string, type: 'VIS' | 'ML') => void;
+  onClickFilter: (k: string, type: 'vis' | 'dr') => void;
   onSetSearchKey: (key: string) => void;
   onSetVersion: (version: string) => void;
 }
 
 export function SideBar(props: Props) {
-  const { paperNumber, VISTags, MLTags, onClickFilter, onSetSearchKey, onSetVersion, paperArea, paperYear, paperMatrix, mobileOpen, handleDrawerToggle } = props;
+  const { paperNumber, VISTags, MLTags, onClickFilter, onSetSearchKey, onSetVersion, paperArea, paperYear, mobileOpen, handleDrawerToggle } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const classes = useStyles();
@@ -89,12 +88,11 @@ export function SideBar(props: Props) {
     < ChartModal
       paperYear={paperYear}
       paperArea={paperArea}
-      paperMatrix={paperMatrix}
     />
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      VIS process filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'VIS')}> {Object.values(VISTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      VIS process filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'vis')}> {Object.values(VISTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
     </Typography>
     <div className={classes.filters}>
       {Object.entries(VISTags).map(([v, checked]) => (
@@ -109,7 +107,7 @@ export function SideBar(props: Props) {
             variant={checked ? "default" : "outlined"}
             color="primary"
 
-            onClick={() => onClickFilter(v, 'VIS')}
+            onClick={() => onClickFilter(v, 'vis')}
           />
         </Tooltip>
       ))}
@@ -118,7 +116,7 @@ export function SideBar(props: Props) {
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      ML tasks filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'ML')}> {Object.values(MLTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      ML tasks filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'dr')}> {Object.values(MLTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
     </Typography>
     <div className={classes.filters}>
       <div className={classes.filters}>
@@ -130,47 +128,13 @@ export function SideBar(props: Props) {
             clickable
             variant={checked ? "default" : "outlined"}
             color="secondary"
-            onClick={() => onClickFilter(m, 'ML')}
+            onClick={() => onClickFilter(m, 'dr')}
           />
         ))}
       </div>
     </div>
-    <Divider />
-    {/* <FormControl required className={classes.formControl}>
-    <InputLabel>Version</InputLabel> */}
-    <Typography variant="subtitle2" className={classes.filterTitle}>
-      Select a version:
-
-      <Select
-        native
-        value={props.version}
-        onChange={(e: React.ChangeEvent<{ value: string }>) => props.onSetVersion(e.target.value)}
-        style={{ marginLeft: '10px' }}
-        name="version"
-        inputProps={{
-          id: 'version-required',
-        }}
-      >
-        <option value={'survey'}> ML4VIS Survey 2020</option>
-        <option value={'latest'}> Latest</option>
-      </Select>
-    </Typography>
-    {/* </FormControl> */}
-
-    <Divider />
-    <Button onClick={handleClick}>
-      <LaunchIcon/> <span>Other Related Surveys</span>
-    </Button>
-    <Menu
-      open={Boolean(anchorEl)}
-      aria-haspopup="true"
-      keepMounted
-      onClose={handleClose}
-    >
-      <MenuItem onClick={() => window.open("https://arxiv.org/pdf/2102.01330")}>Survey on Artificial Intelligence Approaches for Visualization Data</MenuItem>
-      <MenuItem onClick={()=>window.open("https://arxiv.org/abs/2204.06504")}>DL4SciVis: A State-of-the-Art Survey on Deep Learning for Scientific Visualization</MenuItem>
-      <MenuItem onClick={() => window.open("https://www.sciencedirect.com/science/article/pii/S2468502X20300292")}>A survey on automatic infographics and visualization recommendations</MenuItem>
-    </Menu>
+    
+    
   </div>
 
   return (<>

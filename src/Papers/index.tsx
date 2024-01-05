@@ -5,6 +5,7 @@ import {
   Card,
   Button,
   CardActions,
+  CardMedia,
   Avatar,
   Chip,
   CardContent,
@@ -52,13 +53,19 @@ export function Papers(props: Props) {
                   <Typography className={classes.pos} color="textSecondary">
                     {paper.venue} {paper.year}
                   </Typography>
+                  <CardMedia
+                    className={classes.media}
+                    image={`assets/images/${paper.ref}.png`}
+                    title={paper.ref}
+                  />
+                  
                   {/* <Typography variant="body2" component="p">
                     Author1, Author2, Author3, and Author4
                   </Typography> */}
                   <div className={classes.grow}></div>
                   <div className={classes.tags}>
                   <AvatarGroup className={classes.avatarGroup}>
-                    {paper.VIS.map((v) => (
+                    {paper.vis.map((v) => (
                       // <Avatar key={v} className={classes.VISTag}>
                       //   {getAvatar(v)}
                       // </Avatar>
@@ -66,7 +73,7 @@ export function Papers(props: Props) {
                     ))}
                   </AvatarGroup>
                   <AvatarGroup className={classes.avatarGroup}>
-                    {paper.ML.map((m) => (
+                    {paper.dr.map((m) => (
                       <Avatar key={m} className={classes.MLTag}>
                         <b>{getAvatar(m)}</b>
                       </Avatar>

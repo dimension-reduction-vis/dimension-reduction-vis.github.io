@@ -11,7 +11,6 @@ import {
 import { TopBar } from "./TopBar";
 import { Papers } from "./Papers";
 import { SideBar } from "./SideBar";
-import { TPaperMatrix } from './ChartModal'
 
 import { useStyles, theme } from "./style";
 
@@ -19,8 +18,10 @@ export interface Paper {
   name: string;
   venue: string;
   year: number;
-  VIS: string[];
-  ML: string[];
+  vis: string[];
+  dr: string[];
+  subject_area: string;
+  ref:string;
   url?: string;
 }
 
@@ -42,7 +43,7 @@ export const getAvatar = (s: string) => {
 
 export default function App() {
   const classes = useStyles();
-  const defaultVersion = "latest"
+  const defaultVersion = "survey"
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [papers, setPapers] = useState<Paper[]>([]);
@@ -57,7 +58,6 @@ export default function App() {
   };
   const [paperYear, setPaperYears] = useState<{[k:string]:number}>({});
   const [paperArea, setPaperAreas] = useState<{[k:string]:number}>({});
-  const [paperMatrix, setPaperMatrix] = useState<TPaperMatrix>({VISData:[], VISTags:[], MLTags:[], MLData:[], matrix: []});
 
   const isMenuOpen = Boolean(anchorEl);
   const menuId = "primary-search-account-menu";
@@ -69,7 +69,7 @@ export default function App() {
     );
     setPapers(papers);
     const initialVISTag = papers.reduce((o, d) => {
-      d.VIS.forEach((v) => {
+      d.vis.forEach((v) => {
         if (!(v in o)) {
           o[v] = true;
         }
@@ -78,7 +78,7 @@ export default function App() {
     }, {})
   
     const initialMLTag = papers.reduce((o, d) => {
-      d.ML.forEach((v) => {
+      d.dr.forEach((v) => {
         if (!(v in o)) {
           o[v] = true;
         }
@@ -111,31 +111,16 @@ export default function App() {
     const MLTags = Object.keys(initialMLTag)
     const VISTags = Object.keys(initialVISTag)
 
-    let initialMatrix = VISTags.map(_ =>MLTags.map( _ =>0))
-
-    papers.forEach(p=>{
-      VISTags.forEach((vis, i)=>{
-        MLTags.forEach((ml, j)=>{
-          if (p['ML'].includes(ml) && p['VIS'].includes(vis)) initialMatrix[i][j]+=1 
-        })
-      })
-    })
-
-    const matrix = initialMatrix.map((row, i)=>{
-      return row.map((cell, j)=>{
-        return [j, i, cell>0? cell : undefined] as [number, number, number|undefined]
-      })
-    }).flat()
 
     const MLData = MLTags.map(ml=>{
-      return papers.filter(p=>p['ML'].includes(ml)).length
+      return papers.filter(p=>p['dr'].includes(ml)).length
     })
 
     const VISData = VISTags.map(vis=>{
-      return papers.filter(p=>p['VIS'].includes(vis)).length
+      return papers.filter(p=>p['vis'].includes(vis)).length
     })
 
-    setPaperMatrix({MLTags, VISTags, MLData, VISData, matrix})
+
     setPaperAreas(initialPaperArea)
     setPaperYears(initialPaperYear)
     setVISTags(initialVISTag);
@@ -150,47 +135,48 @@ export default function App() {
   const onProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
-  const onClickFilter = (tag: string, type: "VIS" | "ML") => {
-    if (type === "VIS") {
-      if (tag !== 'all') {
-        const newVISTag = {
-          ...VISTags,
-          [tag]: !VISTags[tag],
-        }
-        setVISTags(newVISTag);
-      } else {
-        const flag = Object.values(VISTags).every(d => d)
-        const newVISTag = Object.keys(VISTags).reduce((o, d) => { 
-          if (!(d in o)) {
-            o[d] = !flag
-          }
-          return o
-        }, {})
-        setVISTags(newVISTag);
-      }
+  const onClickFilter = (tag: string, type: "vis" | "dr") => {
+    // if (type === "vis") {
+    //   if (tag !== 'all') {
+    //     const newVISTag = {
+    //       ...VISTags,
+    //       [tag]: !VISTags[tag],
+    //     }
+    //     setVISTags(newVISTag);
+    //   } else {
+    //     const flag = Object.values(VISTags).every(d => d)
+    //     const newVISTag = Object.keys(VISTags).reduce((o, d) => { 
+    //       if (!(d in o)) {
+    //         o[d] = !flag
+    //       }
+    //       return o
+    //     }, {})
+    //     setVISTags(newVISTag);
+    //   }
       
 
-    } else if (type === "ML") {
-      if (tag != 'all') {
-        const newMLTags = {
-          ...MLTags,
-          [tag]: !MLTags[tag],
-        }
-        setMLTags(newMLTags);
-      } else {
-        const flag = Object.values(MLTags).every(d => d)
-        const newMLTags = Object.keys(MLTags).reduce((o, d) => { 
-          if (!(d in o)) {
-            o[d] = !flag
-          }
-          return o
-        }, {})
-        setMLTags(newMLTags);
-      }
+    // } else if (type === "dr") {
+    //   if (tag != 'all') {
+    //     const newMLTags = {
+    //       ...MLTags,
+    //       [tag]: !MLTags[tag],
+    //     }
+    //     setMLTags(newMLTags);
+    //   } else {
+    //     const flag = Object.values(MLTags).every(d => d)
+    //     const newMLTags = Object.keys(MLTags).reduce((o, d) => { 
+    //       if (!(d in o)) {
+    //         o[d] = !flag
+    //       }
+    //       return o
+    //     }, {})
+    //     setMLTags(newMLTags);
+    //   }
       
-    }
+    // }
     
   };
+
   const onSetSearchKey = (searchKey:string)=>{
     setSearchKey(searchKey.toLowerCase())
   }
@@ -202,7 +188,7 @@ export default function App() {
 
   
   const papersAfterFilter = papers.filter(
-    (p) => p.ML.some((m) => MLTags[m]) && p.VIS.some((v) => VISTags[v]) && p.name.toLowerCase().includes(searchKey)
+    (p) => p.dr.some((m) => MLTags[m]) && p.vis.some((v) => VISTags[v]) && p.name.toLowerCase().includes(searchKey)
   );
 
   return (
@@ -222,7 +208,6 @@ export default function App() {
           onSetVersion = {onSetVersion}
           paperYear = {paperYear}
           paperArea={paperArea}
-          paperMatrix={paperMatrix}
           mobileOpen={mobileOpen}
           handleDrawerToggle={handleDrawerToggle}
         />

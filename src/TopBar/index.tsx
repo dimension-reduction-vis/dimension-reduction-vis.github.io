@@ -43,11 +43,12 @@ export function TopBar(props: Props) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap className={classes.title}>
-          ML4VIS
+          STAR Report: Visualization and Interpretation of Dimension Reduction
         </Typography>
 
         <div className={classes.sectionDesktop}>
-          <IconButton
+
+          {/* <IconButton
             edge="end"
             aria-label="link to arxiv paper"
             aria-haspopup="true"
@@ -55,17 +56,18 @@ export function TopBar(props: Props) {
             color="inherit"
           >
             <Description /> <span style={{fontSize: '12px'}} className={classes.iconName}>{' '}Preprint </span>
-          </IconButton>
+          </IconButton> */}
+
           <IconButton
             edge="end"
             aria-label="link to github homepage"
             aria-haspopup="true"
-            onClick={()=>window.open("https://github.com/ML4VIS/ML4VIS.github.io")}
+            onClick={()=>window.open("https://github.com/dimension-reduction-vis/dimension-reduction-vis.github.io")}
             color="inherit"
           >
             <GitHub /> <span style={{fontSize: '12px'}} className={classes.iconName}>{' '}Github </span>
           </IconButton>
-          <IconButton
+          {/* <IconButton
             edge="end"
             aria-label="suggest new ML4VIS papers for this survey"
             aria-haspopup="true"
@@ -73,7 +75,7 @@ export function TopBar(props: Props) {
             color="inherit"
           >
             <CloudUpload />  <span style={{fontSize: '12px'}} className={classes.iconName}> {' '}Contribute </span>
-          </IconButton>
+          </IconButton> */}
         </div>
       </Toolbar>
     </AppBar>
