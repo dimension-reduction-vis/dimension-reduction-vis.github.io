@@ -63,22 +63,33 @@ export function Papers(props: Props) {
                     Author1, Author2, Author3, and Author4
                   </Typography> */}
                   <div className={classes.grow}></div>
+
                   <div className={classes.tags}>
-                  <AvatarGroup className={classes.avatarGroup}>
+
+                    {paper.vis.map((v) => (
+                      <Chip key={v} className={classes.VISTag} label={v} />
+                    ))}
+
+                    {paper.dr.map((i) => (
+                      <Chip key={i} className={classes.MLTag} label={i} />
+                    ))}
+
+                  {/* <AvatarGroup className={classes.avatarGroup}>
                     {paper.vis.map((v) => (
                       // <Avatar key={v} className={classes.VISTag}>
                       //   {getAvatar(v)}
                       // </Avatar>
                       <Avatar key={v} className={classes.VISTag} src={`assets/avatars/${v.replace(' ', '_')}_w.png`} />
                     ))}
-                  </AvatarGroup>
-                  <AvatarGroup className={classes.avatarGroup}>
+                  </AvatarGroup> */}
+
+                  {/* <AvatarGroup className={classes.avatarGroup}>
                     {paper.dr.map((m) => (
                       <Avatar key={m} className={classes.MLTag}>
                         <b>{getAvatar(m)}</b>
                       </Avatar>
                     ))}
-                  </AvatarGroup>
+                  </AvatarGroup> */}
                   </div>
                 </CardContent>
                 {/* <CardActions>

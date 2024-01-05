@@ -99,9 +99,9 @@ export function SideBar(props: Props) {
         <Tooltip key={v} title={VISTagDetails[v]}>
           <Chip
             key={v}
-            avatar={
-              <Avatar src={`assets/avatars/${v.replace(' ', '_')}_w.png`} />
-            }
+            // avatar={
+            //   <Avatar src={`assets/avatars/${v.replace(' ', '_')}_w.png`} />
+            // }
             label={v}
             clickable
             variant={checked ? "default" : "outlined"}
@@ -123,8 +123,9 @@ export function SideBar(props: Props) {
         {Object.entries(MLTags).map(([m, checked]) => (
           <Chip
             key={m}
-            avatar={<Avatar style={{ color: "white" }} ><b>{getAvatar(m)}</b></Avatar>}
-            label={`${m[0].toUpperCase()}${m.slice(1)}`}
+            // avatar={<Avatar style={{ color: "white" }} ><b>{getAvatar(m)}</b></Avatar>}
+            // label={`${m[0].toUpperCase()}${m.slice(1)}`}
+            label={m}
             clickable
             variant={checked ? "default" : "outlined"}
             color="secondary"
