@@ -16,7 +16,7 @@ import {
 } from "@material-ui/core";
 import { Search as SearchIcon, LaunchOutlined as LaunchIcon } from "@material-ui/icons";
 import Select from '@material-ui/core/Select';
-import { getAvatar } from '../index'
+import { ITags } from '../index'
 import { useStyles } from "./style";
 
 import { ChartModal} from '../ChartModal'
@@ -34,10 +34,10 @@ const VISTagDetails = {
 interface Props {
   paperNumber: number;
   version: string;
-  VISTags: Record<string, boolean>;
-  MLTags: Record<string, boolean>;
-  paperYear: Record<string, number>;
-  paperArea: Record<string, number>;
+  VISTags: ITags;
+  MLTags: ITags;
+  paperYear: ITags;
+  paperArea: ITags;
   mobileOpen: boolean;
   handleDrawerToggle: () => void;
   onClickFilter: (k: string, type: 'vis' | 'dr') => void;
@@ -46,16 +46,9 @@ interface Props {
 }
 
 export function SideBar(props: Props) {
-  const { paperNumber, VISTags, MLTags, onClickFilter, onSetSearchKey, onSetVersion, paperArea, paperYear, mobileOpen, handleDrawerToggle } = props;
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const { paperNumber, VISTags, MLTags, onClickFilter, onSetSearchKey, paperArea, paperYear, mobileOpen, handleDrawerToggle } = props;
+  
   const classes = useStyles();
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const drawer = <div className={classes.drawerContainer}>
     <Toolbar />
@@ -92,7 +85,7 @@ export function SideBar(props: Props) {
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      VIS process filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'vis')}> {Object.values(VISTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      Visualization Types: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'vis')}> {Object.values(VISTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
     </Typography>
     <div className={classes.filters}>
       {Object.entries(VISTags).map(([v, checked]) => (
@@ -116,7 +109,7 @@ export function SideBar(props: Props) {
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      ML tasks filter: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'dr')}> {Object.values(MLTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      Dimension Reduction Methods: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'dr')}> {Object.values(MLTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
     </Typography>
     <div className={classes.filters}>
       <div className={classes.filters}>

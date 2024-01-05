@@ -25,21 +25,28 @@ export interface Paper {
   url?: string;
 }
 
-export const getAvatar = (s: string) => {
-  const pieces = s.split(" ");
-  if (pieces.length > 1) {
-    return `${pieces[0][0].toUpperCase()}${pieces[1][0].toUpperCase()}`;
-  } else if(s === 'Clustering') {
-      return 'CLT'
-  } else if(s === 'Classification') {
-      return 'CLS'
-  } else if (s === 'Regression') {
-      return 'RE'
-  } else if (s === 'Reinforcement') {
-      return 'RF'
+export interface ITags {
+  [category:string]: {
+    selected: boolean;
+    count: number;
   }
-  return `${pieces[0][0].toUpperCase()}`;
-};
+}
+
+// export const getAvatar = (s: string) => {
+//   const pieces = s.split(" ");
+//   if (pieces.length > 1) {
+//     return `${pieces[0][0].toUpperCase()}${pieces[1][0].toUpperCase()}`;
+//   } else if(s === 'Clustering') {
+//       return 'CLT'
+//   } else if(s === 'Classification') {
+//       return 'CLS'
+//   } else if (s === 'Regression') {
+//       return 'RE'
+//   } else if (s === 'Reinforcement') {
+//       return 'RF'
+//   }
+//   return `${pieces[0][0].toUpperCase()}`;
+// };
 
 export default function App() {
   const classes = useStyles();
@@ -47,8 +54,10 @@ export default function App() {
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [papers, setPapers] = useState<Paper[]>([]);
-  const [VISTags, setVISTags] = useState({});
-  const [MLTags, setMLTags] = useState({});
+
+  const [VISTags, setVISTags] = useState<ITags>({});
+  const [MLTags, setMLTags] = useState<ITags>({});
+
   const [searchKey, setSearchKey] = useState('');
   const [version, setVersion] = useState(defaultVersion);
 
@@ -56,8 +65,8 @@ export default function App() {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  const [paperYear, setPaperYears] = useState<{[k:string]:number}>({});
-  const [paperArea, setPaperAreas] = useState<{[k:string]:number}>({});
+  const [paperYear, setPaperYears] = useState<ITags>({});
+  const [paperArea, setPaperAreas] = useState<ITags>({});
 
   const isMenuOpen = Boolean(anchorEl);
   const menuId = "primary-search-account-menu";
@@ -68,57 +77,44 @@ export default function App() {
       res.json()
     );
     setPapers(papers);
-    const initialVISTag = papers.reduce((o, d) => {
-      d.vis.forEach((v) => {
-        if (!(v in o)) {
-          o[v] = true;
+
+    const getInitialTags = (tagName:string, arrayFlag: boolean):ITags =>{
+      
+      if (arrayFlag) {  
+        // if the tag is an array for each paper
+        return papers.reduce((o, d) => {
+          d[tagName].forEach((v) => {
+            if (!(v in o)) {
+              o[v] = {
+                count: 1,
+                selected: true
+              }
+            } else {
+              o[v].count += 1
+            }
+          });
+          return o;
+        }, {})
+    } else {
+      // if the tag is a single value for each paper
+      return papers.reduce((o, d) => {
+        if (! (d[tagName] in o)){
+          o[d[tagName]] = {
+            selected: true,
+            count: 1
+          }
+        } else {
+          o[d[tagName]].count +=1
         }
-      });
-      return o;
-    }, {})
-  
-    const initialMLTag = papers.reduce((o, d) => {
-      d.dr.forEach((v) => {
-        if (!(v in o)) {
-          o[v] = true;
-        }
-      });
-      return o;
-    }, {})
+        return o
+      }, {})
+    }
+    }
 
-    const initialPaperYear = papers.reduce((o, d) => {
-      if (! (d.year in o)){
-        o[d.year] = 1
-      } else {
-        o[d.year] +=1
-      }
-      return o
-    }, {})
-    
-    
-
-    const initialPaperArea = papers.reduce((o, d) => {
-      if (! (d.venue in o)){
-        o[d.venue] = 1
-      } else {
-        o[d.venue] +=1
-      }
-      return o
-    }, {})
-
-    
-    
-    const MLTags = Object.keys(initialMLTag)
-    const VISTags = Object.keys(initialVISTag)
-
-
-    const MLData = MLTags.map(ml=>{
-      return papers.filter(p=>p['dr'].includes(ml)).length
-    })
-
-    const VISData = VISTags.map(vis=>{
-      return papers.filter(p=>p['vis'].includes(vis)).length
-    })
+    const initialVISTag = getInitialTags('vis', true)
+    const initialMLTag = getInitialTags('dr', true)
+    const initialPaperYear = getInitialTags('year', false)
+    const initialPaperArea = getInitialTags('subject_area', false)
 
 
     setPaperAreas(initialPaperArea)

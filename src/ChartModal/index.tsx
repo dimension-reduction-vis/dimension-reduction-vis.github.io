@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { BarChartOutlined as ChartIcon } from "@material-ui/icons";
 
 import ReactECharts from 'echarts-for-react';
+import { ITags } from "..";
 
 const useStyles = makeStyles({
     dialogInfo: {
@@ -27,8 +28,8 @@ const useStyles = makeStyles({
   });
   
 type Props = {
-    paperYear: {[k:string]: number};
-    paperArea: {[k:string]: number};
+    paperYear: ITags;
+    paperArea: ITags;
 }
 
 export function ChartModal(props: Props) {
@@ -67,13 +68,13 @@ export function ChartModal(props: Props) {
         },
         series: [
           {
-            data: years.map(y=>paperYear[y]),
+            data: years.map(y=>paperYear[y].count),
             type: 'bar'
           }
         ]
       }
 
-      const areas = Object.keys(paperArea).sort((a,b)=>paperArea[a] - paperArea[b])
+      const areas = Object.keys(paperArea).sort((a,b)=>paperArea[a].count - paperArea[b].count)
 
       const areaOption = {
         title: {
@@ -99,7 +100,7 @@ export function ChartModal(props: Props) {
         },
         series: [
           {
-            data: areas.map(a=>paperArea[a]),
+            data: areas.map(a=>paperArea[a].count),
             type: 'bar'
           }
         ]
