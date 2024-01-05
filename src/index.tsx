@@ -25,6 +25,16 @@ export interface Paper {
   url?: string;
 }
 
+export const TAG_NAMES = {
+  'vis':true, 
+  'dr':true, 
+  'annotation': true,
+  'style': true,
+  'interpretation': true,
+  'subject_area':false, 
+  'year':false
+} // tag names and whether they are arrays
+
 export interface ITags {
   [category:string]: {
     selected: boolean;
@@ -108,10 +118,10 @@ export default function App() {
     }
 
     const initialTags = {}
-    const tagNames = {'vis':true, 'dr':true, 'subject_area':false, 'year':false} // tag names and whether they are arrays
+   
 
-    Object.keys( tagNames ).forEach((tagName)=>{
-      initialTags[tagName] = getInitialTags(tagName, tagNames[tagName])
+    Object.keys( TAG_NAMES ).forEach((tagName)=>{
+      initialTags[tagName] = getInitialTags(tagName, TAG_NAMES[tagName])
     })
     setTags(initialTags)
 
