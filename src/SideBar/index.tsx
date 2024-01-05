@@ -64,7 +64,7 @@ export function SideBar(props: Props) {
             label={`${cate} (${tags[tag][cate].count})`}
             clickable
             variant={tags[tag][cate].selected ? "default" : "outlined"}
-            color='blue'
+            color='primary'
             onClick={() => onClickFilter(tag, cate)}
           />
         ))}
