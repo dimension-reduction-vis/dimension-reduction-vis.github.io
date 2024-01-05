@@ -13,6 +13,7 @@ import {
   MenuItem,
   Button,
   Hidden,
+  Tab,
 } from "@material-ui/core";
 import { Search as SearchIcon, LaunchOutlined as LaunchIcon } from "@material-ui/icons";
 import Select from '@material-ui/core/Select';
@@ -34,19 +35,22 @@ const VISTagDetails = {
 interface Props {
   paperNumber: number;
   version: string;
-  VISTags: ITags;
-  MLTags: ITags;
-  paperYear: ITags;
-  paperArea: ITags;
+  // VISTags: ITags;
+  // MLTags: ITags;
+  // paperYear: ITags;
+  // paperArea: ITags;
+  tags: {[tagName:string]:ITags};
   mobileOpen: boolean;
   handleDrawerToggle: () => void;
-  onClickFilter: (k: string, type: 'vis' | 'dr') => void;
+  onClickFilter: (tag: string, category:string) => void;
   onSetSearchKey: (key: string) => void;
   onSetVersion: (version: string) => void;
 }
 
 export function SideBar(props: Props) {
-  const { paperNumber, VISTags, MLTags, onClickFilter, onSetSearchKey, paperArea, paperYear, mobileOpen, handleDrawerToggle } = props;
+  const { paperNumber,  onClickFilter, onSetSearchKey, tags, mobileOpen, handleDrawerToggle } = props;
+  if (!tags['vis']) return null;
+  const { vis:VISTags, dr: MLTags, year: paperYear, subject_area: paperArea } = tags;
   
   const classes = useStyles();
 
@@ -85,22 +89,20 @@ export function SideBar(props: Props) {
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      Visualization Types: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'vis')}> {Object.values(VISTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      Visualization Types: 
+      {/* <Button variant="outlined" size="small" onClick={() => onClickFilter('vis', "all")}> {Object.values(VISTags).every(d => d.selected) ? 'Unselect All' : 'Select All'}</Button> */}
     </Typography>
     <div className={classes.filters}>
-      {Object.entries(VISTags).map(([v, checked]) => (
+      {Object.keys(VISTags).map((v) => (
         <Tooltip key={v} title={VISTagDetails[v]}>
           <Chip
             key={v}
-            // avatar={
-            //   <Avatar src={`assets/avatars/${v.replace(' ', '_')}_w.png`} />
-            // }
             label={v}
             clickable
-            variant={checked ? "default" : "outlined"}
+            variant={VISTags[v].selected ? "default" : "outlined"}
             color="primary"
 
-            onClick={() => onClickFilter(v, 'vis')}
+            onClick={() => onClickFilter('vis', v)}
           />
         </Tooltip>
       ))}
@@ -109,20 +111,21 @@ export function SideBar(props: Props) {
     <Divider />
 
     <Typography variant="subtitle2" className={classes.filterTitle}>
-      Dimension Reduction Methods: <Button variant="outlined" size="small" onClick={() => onClickFilter("all", 'dr')}> {Object.values(MLTags).every(d => d) ? 'Unselect All' : 'Select All'}</Button>
+      Dimension Reduction Methods: 
+      {/* <Button variant="outlined" size="small" onClick={() => onClickFilter('dr', 'all')}> {Object.values(MLTags).every(d => d.selected) ? 'Unselect All' : 'Select All'}</Button> */}
     </Typography>
     <div className={classes.filters}>
       <div className={classes.filters}>
-        {Object.entries(MLTags).map(([m, checked]) => (
+        {Object.keys(MLTags).map((m) => (
           <Chip
             key={m}
             // avatar={<Avatar style={{ color: "white" }} ><b>{getAvatar(m)}</b></Avatar>}
             // label={`${m[0].toUpperCase()}${m.slice(1)}`}
             label={m}
             clickable
-            variant={checked ? "default" : "outlined"}
+            variant={MLTags[m].selected ? "default" : "outlined"}
             color="secondary"
-            onClick={() => onClickFilter(m, 'dr')}
+            onClick={() => onClickFilter('dr', m)}
           />
         ))}
       </div>

@@ -55,8 +55,7 @@ export default function App() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [papers, setPapers] = useState<Paper[]>([]);
 
-  const [VISTags, setVISTags] = useState<ITags>({});
-  const [MLTags, setMLTags] = useState<ITags>({});
+  const [tags, setTags] = useState<{[tagName:string]:ITags}>({});
 
   const [searchKey, setSearchKey] = useState('');
   const [version, setVersion] = useState(defaultVersion);
@@ -65,10 +64,7 @@ export default function App() {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  const [paperYear, setPaperYears] = useState<ITags>({});
-  const [paperArea, setPaperAreas] = useState<ITags>({});
 
-  const isMenuOpen = Boolean(anchorEl);
   const menuId = "primary-search-account-menu";
 
 
@@ -111,16 +107,13 @@ export default function App() {
     }
     }
 
-    const initialVISTag = getInitialTags('vis', true)
-    const initialMLTag = getInitialTags('dr', true)
-    const initialPaperYear = getInitialTags('year', false)
-    const initialPaperArea = getInitialTags('subject_area', false)
+    const initialTags = {}
+    const tagNames = {'vis':true, 'dr':true, 'subject_area':false, 'year':false} // tag names and whether they are arrays
 
-
-    setPaperAreas(initialPaperArea)
-    setPaperYears(initialPaperYear)
-    setVISTags(initialVISTag);
-    setMLTags(initialMLTag);
+    Object.keys( tagNames ).forEach((tagName)=>{
+      initialTags[tagName] = getInitialTags(tagName, tagNames[tagName])
+    })
+    setTags(initialTags)
 
   };
 
@@ -131,45 +124,26 @@ export default function App() {
   const onProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
-  const onClickFilter = (tag: string, type: "vis" | "dr") => {
-    // if (type === "vis") {
-    //   if (tag !== 'all') {
-    //     const newVISTag = {
-    //       ...VISTags,
-    //       [tag]: !VISTags[tag],
-    //     }
-    //     setVISTags(newVISTag);
-    //   } else {
-    //     const flag = Object.values(VISTags).every(d => d)
-    //     const newVISTag = Object.keys(VISTags).reduce((o, d) => { 
-    //       if (!(d in o)) {
-    //         o[d] = !flag
-    //       }
-    //       return o
-    //     }, {})
-    //     setVISTags(newVISTag);
-    //   }
-      
 
-    // } else if (type === "dr") {
-    //   if (tag != 'all') {
-    //     const newMLTags = {
-    //       ...MLTags,
-    //       [tag]: !MLTags[tag],
-    //     }
-    //     setMLTags(newMLTags);
-    //   } else {
-    //     const flag = Object.values(MLTags).every(d => d)
-    //     const newMLTags = Object.keys(MLTags).reduce((o, d) => { 
-    //       if (!(d in o)) {
-    //         o[d] = !flag
-    //       }
-    //       return o
-    //     }, {})
-    //     setMLTags(newMLTags);
-    //   }
-      
-    // }
+  const onClickFilter = (tag: string, category: string) => {
+    let newTags = tags
+    if (category === 'all') {
+      Object.keys(tags[tag]).forEach((category)=>{
+        newTags[tag][category].selected = true
+      })
+    } else {
+      newTags = {
+        ...tags,
+        [tag]: {
+          ...tags[tag],
+          [category]: {
+            ...tags[tag][category],
+            selected: !tags[tag][category].selected,
+          },
+        },
+      };
+    }
+    setTags(newTags);
     
   };
 
@@ -182,9 +156,13 @@ export default function App() {
     fetchData(version)
   }
 
+  if (!tags['vis']) return null; // return null if the tags are not loaded
+
   
   const papersAfterFilter = papers.filter(
-    (p) => p.dr.some((m) => MLTags[m]) && p.vis.some((v) => VISTags[v]) && p.name.toLowerCase().includes(searchKey)
+    (p) => p.dr.some((m) => tags['dr'][m].selected) // include the papers with the selected dr tags
+      && p.vis.some((v) => tags['vis'][v].selected) // include the papers with the selected vis tags
+      && p.name.toLowerCase().includes(searchKey) // include the papers with the search key
   );
 
   return (
@@ -196,14 +174,11 @@ export default function App() {
 
         <SideBar
           paperNumber={papersAfterFilter.length}
-          VISTags={VISTags}
-          MLTags={MLTags}
+          tags={tags}
           version={version}
           onClickFilter={onClickFilter}
           onSetSearchKey={onSetSearchKey}
           onSetVersion = {onSetVersion}
-          paperYear = {paperYear}
-          paperArea={paperArea}
           mobileOpen={mobileOpen}
           handleDrawerToggle={handleDrawerToggle}
         />

@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
-import { Paper as TPaper, getAvatar } from "../index";
+import { Paper as TPaper} from "../index";
 import { useStyles } from "./style";
 
 interface Props {
