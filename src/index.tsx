@@ -192,6 +192,7 @@ export default function App() {
   
   const papersAfterFilter = papers.filter(
     (p) => ['vis', 'dr', 'annotation', 'interpretation'].every((tag) => p[tag].some((cate)=>tags[tag][cate].selected)) // include the papers with the selected tags
+
   );
 
   return (

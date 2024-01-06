@@ -11,17 +11,17 @@
             "pca"
         ],
         "annotation": [
-            "tl",
-            "hi",
-            "ca"
+            "label",
+            "highlight",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sc",
-            "mc"
+            "single clusters",
+            "compare clusters"
         ],
         "year": 2020
     },
@@ -37,8 +37,8 @@
             "pca"
         ],
         "annotation": [
-            "hi",
-            "ca"
+            "highlight",
+            "caption"
         ],
         "style": [
             "le",
@@ -47,7 +47,7 @@
             "gs"
         ],
         "interpretation": [
-            "mc",
+            "compare clusters",
             "gp"
         ],
         "year": 2019
@@ -65,23 +65,23 @@
             "pca"
         ],
         "annotation": [
-            "hi",
-            "ca"
+            "highlight",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sp",
-            "mp",
-            "sc",
+            "single points",
+            "compare points",
+            "single clusters",
             "rov"
         ],
         "year": 2021
     },
     {
-        "name": "In Situ X-ray Diffraction Study of Xe and CO2 Adsorption in Y Zeolite: Comparison between Rietveld and PCA-Based Analysis",
+        "name": "In Situ X-ray Diffraction Study of Xe and CO2 Adsorption in Y Zeolite: compare between Rietveld and PCA-Based Analysis",
         "venue": "Crystals",
         "subject_area": "phys",
         "ref": "conterosito2020situ",
@@ -93,7 +93,7 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "le",
@@ -101,7 +101,7 @@
             "sm"
         ],
         "interpretation": [
-            "sc",
+            "single clusters",
             "gp",
             "rov"
         ],
@@ -120,13 +120,13 @@
             "other"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "gs"
         ],
         "interpretation": [
-            "sp",
+            "single points",
             "gp"
         ],
         "year": 2021
@@ -143,7 +143,7 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "le",
@@ -152,8 +152,8 @@
             "sm"
         ],
         "interpretation": [
-            "sc",
-            "mc",
+            "single clusters",
+            "compare clusters",
             "gp"
         ],
         "year": 2021
@@ -170,17 +170,17 @@
             "pca"
         ],
         "annotation": [
-            "tl",
-            "hi",
-            "ca"
+            "label",
+            "highlight",
+            "caption"
         ],
         "style": [
             "le",
             "ax"
         ],
         "interpretation": [
-            "sc",
-            "mc",
+            "single clusters",
+            "compare clusters",
             "gp"
         ],
         "year": 2020
@@ -198,8 +198,8 @@
             "other"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "le",
@@ -208,8 +208,8 @@
             "sm"
         ],
         "interpretation": [
-            "sc",
-            "mc",
+            "single clusters",
+            "compare clusters",
             "gp"
         ],
         "year": 2021
@@ -226,20 +226,20 @@
             "pca"
         ],
         "annotation": [
-            "tl",
-            "hi",
-            "ca"
+            "label",
+            "highlight",
+            "caption"
         ],
         "style": [
             "ax"
         ],
         "interpretation": [
-            "mc"
+            "compare clusters"
         ],
         "year": 2021
     },
     {
-        "name": "Comparison of hydrothermal carbonization and torrefaction of azolla biomass: Analysis of the solid products",
+        "name": "compare of hydrothermal carbonization and torrefaction of azolla biomass: Analysis of the solid products",
         "venue": "Journal of Analytical and Applied Pyrolysis",
         "subject_area": "chem",
         "ref": "babinszki2020comparison",
@@ -250,15 +250,15 @@
             "pca"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "mc",
+            "compare clusters",
             "gp"
         ],
         "year": 2020
@@ -275,14 +275,14 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sc"
+            "single clusters"
         ],
         "year": 2019
     },
@@ -298,7 +298,7 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "le",
@@ -324,16 +324,16 @@
             "other"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sc",
-            "mc",
+            "single clusters",
+            "compare clusters",
             "rov"
         ],
         "year": 2021
@@ -351,18 +351,18 @@
             "other"
         ],
         "annotation": [
-            "tl",
-            "hi",
-            "ca"
+            "label",
+            "highlight",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sp",
-            "sc",
-            "mc"
+            "single points",
+            "single clusters",
+            "compare clusters"
         ],
         "year": 2020
     },
@@ -378,19 +378,19 @@
             "pca"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "ax",
             "gr"
         ],
         "interpretation": [
-            "sp",
-            "mp",
-            "sc",
-            "mc",
-            "ou"
+            "single points",
+            "compare points",
+            "single clusters",
+            "compare clusters",
+            "outliers"
         ],
         "year": 2022
     },
@@ -408,8 +408,8 @@
             "tsne"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "le",
@@ -418,9 +418,9 @@
             "sm"
         ],
         "interpretation": [
-            "mp",
-            "sc",
-            "mc",
+            "compare points",
+            "single clusters",
+            "compare clusters",
             "rov"
         ],
         "year": 2020
@@ -437,7 +437,7 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "le",
@@ -445,8 +445,8 @@
             "gs"
         ],
         "interpretation": [
-            "sc",
-            "mc"
+            "single clusters",
+            "compare clusters"
         ],
         "year": 2020
     },
@@ -463,8 +463,8 @@
             "other"
         ],
         "annotation": [
-            "tl",
-            "ca"
+            "label",
+            "caption"
         ],
         "style": [
             "le",
@@ -473,7 +473,7 @@
             "sm"
         ],
         "interpretation": [
-            "mc",
+            "compare clusters",
             "gp",
             "rov"
         ],
@@ -491,9 +491,9 @@
             "tsne"
         ],
         "annotation": [
-            "tl",
-            "hi",
-            "ca"
+            "label",
+            "highlight",
+            "caption"
         ],
         "style": [
             "le",
@@ -501,9 +501,9 @@
             "sm"
         ],
         "interpretation": [
-            "sp",
-            "sc",
-            "mc",
+            "single points",
+            "single clusters",
+            "compare clusters",
             "rov"
         ],
         "year": 2022
@@ -520,7 +520,7 @@
             "pca"
         ],
         "annotation": [
-            "ca"
+            "caption"
         ],
         "style": [
             "le",
@@ -528,9 +528,341 @@
             "gr"
         ],
         "interpretation": [
-            "mc",
+            "compare clusters",
             "rov"
         ],
         "year": 2018
+    },
+    {
+        "name": "A novel ferroptosis-related lncRNA signature for prognosis prediction in gastric cancer",
+        "subject_area": "bio",
+        "venue": "BMC Cancer",
+        "year": "2021",
+        "vis": [
+            "3d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "A t-SNE Based Classification Approach to Compositional Microbiome Data",
+        "subject_area": "bio",
+        "venue": "Front. Genet.",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "tsne"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Clump sequencing exposes the spatial expression programs of intestinal secretory cells",
+        "subject_area": "bio",
+        "venue": "Nature Communication",
+        "year": "2021",
+        "vis": [
+            "3d",
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "tsne"
+        ],
+        "interpretation": [
+            "global"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Multiscale PHATE identifies multimodal signatures of COVID-19",
+        "subject_area": "bio",
+        "venue": "Nature Biotechnolgoy",
+        "year": "2022",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "umap"
+        ],
+        "interpretation": [
+            "single points",
+            "compare poitns",
+            "compare clusters",
+            "global"
+        ],
+        "annotation": [
+            "label",
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Single-cell transcriptional changes associated with drug tolerance and response to combination therapies in cancer",
+        "subject_area": "bio",
+        "venue": "Nature Communication",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "umap"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Development of Remote Jobs as a Factor to Increase Labor Efficiency",
+        "subject_area": "busi",
+        "venue": "Journal of Eastern European and Central Asian Research (JEECAR)",
+        "year": "2021",
+        "vis": [
+            "3d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "global"
+        ],
+        "annotation": [
+            "label",
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Indicators of sustainable forest management to evaluate the socio-economic functions of coppice in Tuscany, Italy",
+        "subject_area": "busi",
+        "venue": "Socio-Economic Planning Sciences",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "global"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Quantitative analysis of qualitative data: Using voyant tools to investigate the sales-marketing interface",
+        "subject_area": "busi",
+        "venue": "Journal of Industrial Engineering and Management",
+        "year": "2019",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "tsne"
+        ],
+        "interpretation": [
+            "single clusters"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "The Application of Graphic Methods and the DEA in Predicting the Risk of Bankruptcy",
+        "subject_area": "busi",
+        "venue": "Journal of Risk and Financial Management",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "single clusters",
+            "outliers"
+        ],
+        "annotation": [
+            "label"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "The role of the Internet in later life autonomy: Silver surfers in Spain",
+        "subject_area": "busi",
+        "venue": "Humanities and Social Sciences Communications",
+        "year": "2023",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "other"
+        ],
+        "interpretation": [
+            "single clusters"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "compare of phytochemical composition of Ginkgo biloba extracts using a combination of non-targeted and targeted analytical approaches",
+        "subject_area": "chem",
+        "venue": "Analytical and Bioanalytical Chemistry",
+        "year": "2020",
+        "vis": [
+            "3d",
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "none"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Genotypic variation of flavonols and antioxidant capacity in broccoli",
+        "subject_area": "chem",
+        "venue": "Food Chemistry",
+        "year": "2021",
+        "vis": [
+            "3d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Modification of nutritional values and flavor qualities of muscle of swimming crab (Portunus trituberculatus): Application of a dietary lipid nutrition strategy",
+        "subject_area": "chem",
+        "venue": "Food Chemistry",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "label"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "NMR carbohydrate profile in tracing acacia honey authenticity",
+        "subject_area": "chem",
+        "venue": "Food Chemistry",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "ax"
+        ]
+    },
+    {
+        "name": "Visualization Framework for High-Dimensional Spatio-Temporal Hydrological Gridded Datasets using Machine-Learning Techniques",
+        "subject_area": "chem",
+        "venue": "Water",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "tsne",
+            "umap"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ],
+        "annotation": [
+            "label"
+        ],
+        "style": [
+            "ax"
+        ]
     }
 ]
