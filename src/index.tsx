@@ -25,14 +25,35 @@ export interface Paper {
   url?: string;
 }
 
-export const TAG_NAMES = {
-  'vis':true, 
-  'dr':true, 
-  'annotation': true,
-  'style': true,
-  'interpretation': true,
-  'subject_area':false, 
-  'year':false
+export const TAG_PROPERTIES = {
+  'vis':{
+    color: '#ab47bc',
+    isArray: true
+  }, 
+  'dr':{
+    color: '#29b6f6',
+    isArray: true
+  }, 
+  'annotation': {
+    color: '#66bb6a',
+    isArray: true
+  }, 
+  'style': {
+    color: '#ce93d8',
+    isArray: true
+  }, 
+  'interpretation': {
+    color: '#e57373',
+    isArray: true
+  }, 
+  'subject_area':{
+    color: 'orange',
+    isArray: false
+  }, 
+  'year': {
+    color: 'orange',
+    isArray: false
+  }, 
 } // tag names and whether they are arrays
 
 export interface ITags {
@@ -120,8 +141,8 @@ export default function App() {
     const initialTags = {}
    
 
-    Object.keys( TAG_NAMES ).forEach((tagName)=>{
-      initialTags[tagName] = getInitialTags(tagName, TAG_NAMES[tagName])
+    Object.keys( TAG_PROPERTIES ).forEach((tagName)=>{
+      initialTags[tagName] = getInitialTags(tagName, TAG_PROPERTIES[tagName].isArray)
     })
     setTags(initialTags)
 

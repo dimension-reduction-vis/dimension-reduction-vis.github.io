@@ -17,7 +17,7 @@ import {
 } from "@material-ui/core";
 import { Search as SearchIcon, LaunchOutlined as LaunchIcon } from "@material-ui/icons";
 import Select from '@material-ui/core/Select';
-import { ITags, TAG_NAMES } from '../index'
+import { ITags, TAG_PROPERTIES } from '../index'
 import { useStyles } from "./style";
 
 import { ChartModal} from '../ChartModal'
@@ -50,7 +50,7 @@ interface Props {
 export function SideBar(props: Props) {
   const { paperNumber,  onClickFilter, onSetSearchKey, tags, mobileOpen, handleDrawerToggle } = props;
   if (!tags['vis']) return null;
-  const { vis:VISTags, dr: MLTags, year: paperYear, subject_area: paperArea } = tags;
+  const { year: paperYear, subject_area: paperArea } = tags;
   
   const classes = useStyles();
 
@@ -61,10 +61,15 @@ export function SideBar(props: Props) {
             key={cate}
             // avatar={<Avatar style={{ color: "white" }} ><b>{getAvatar(m)}</b></Avatar>}
             // label={`${m[0].toUpperCase()}${m.slice(1)}`}
-            label={`${cate} (${tags[tag][cate].count})`}
+            label={`${cate.toUpperCase()} (${tags[tag][cate].count})`}
             clickable
-            variant={tags[tag][cate].selected ? "default" : "outlined"}
-            color='primary'
+            // color='primary'
+            style={{
+              backgroundColor: tags[tag][cate].selected ? TAG_PROPERTIES[tag].color: 'white', 
+              color: tags[tag][cate].selected ? 'white': TAG_PROPERTIES[tag].color, margin: '2px'
+            }}
+            variant={tags[tag][cate].selected ? "default" : "outlined"
+            }
             onClick={() => onClickFilter(tag, cate)}
           />
         ))}

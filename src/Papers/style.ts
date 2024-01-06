@@ -51,6 +51,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         tags: {
             marginTop: 8,
             display: 'flex',
+            flexWrap: 'wrap',
             '& > *': {
                 margin: theme.spacing(0.5),
                 fontSize: 14,

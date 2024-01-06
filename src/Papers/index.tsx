@@ -14,6 +14,7 @@ import {
 import AvatarGroup from '@material-ui/lab/AvatarGroup';
 import { Paper as TPaper} from "../index";
 import { useStyles } from "./style";
+import { TAG_PROPERTIES } from "../index";
 
 interface Props {
   papers: TPaper[];
@@ -26,6 +27,21 @@ export function Papers(props: Props) {
     window.open(
       paper.url||`https://www.google.com/search?q=${paper.name.replace(' ', '+')}`, 
       "_blank")
+  }
+
+
+
+  const getPaperTags = (paper: TPaper) => {
+    let tags: React.ReactElement[] = [];
+    const tagNames = ['vis', 'dr', 'annotation', 'interpretation'];
+    tagNames.forEach((tag) => {
+      if (paper[tag] && paper[tag].length > 0) {
+        paper[tag].forEach((t:string) => {
+          tags.push(<Chip key={t} style={{backgroundColor: TAG_PROPERTIES[tag]['color'], color: 'white'}} label={t} />);
+        });
+      }
+    });
+    return tags;
   }
 
   return (
@@ -66,30 +82,8 @@ export function Papers(props: Props) {
 
                   <div className={classes.tags}>
 
-                    {paper.vis.map((v) => (
-                      <Chip key={v} className={classes.VISTag} label={v} />
-                    ))}
+                    {getPaperTags(paper)}
 
-                    {paper.dr.map((i) => (
-                      <Chip key={i} className={classes.MLTag} label={i} />
-                    ))}
-
-                  {/* <AvatarGroup className={classes.avatarGroup}>
-                    {paper.vis.map((v) => (
-                      // <Avatar key={v} className={classes.VISTag}>
-                      //   {getAvatar(v)}
-                      // </Avatar>
-                      <Avatar key={v} className={classes.VISTag} src={`assets/avatars/${v.replace(' ', '_')}_w.png`} />
-                    ))}
-                  </AvatarGroup> */}
-
-                  {/* <AvatarGroup className={classes.avatarGroup}>
-                    {paper.dr.map((m) => (
-                      <Avatar key={m} className={classes.MLTag}>
-                        <b>{getAvatar(m)}</b>
-                      </Avatar>
-                    ))}
-                  </AvatarGroup> */}
                   </div>
                 </CardContent>
                 {/* <CardActions>
