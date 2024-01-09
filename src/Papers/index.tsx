@@ -29,6 +29,13 @@ export function Papers(props: Props) {
       "_blank")
   }
 
+  const onClickImage = (paper: TPaper)=>{
+    
+    window.open(
+      `assets/images/${paper.ref}.png`, 
+      "_blank")
+  }
+
 
 
   const getPaperTags = (paper: TPaper) => {
@@ -73,6 +80,7 @@ export function Papers(props: Props) {
                     className={classes.media}
                     image={`assets/images/${paper.ref}.png`}
                     title={paper.ref}
+                    onClick={(e)=> {e.stopPropagation();; onClickImage(paper)}}
                   />
                   
                   {/* <Typography variant="body2" component="p">
