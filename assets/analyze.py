@@ -75,6 +75,8 @@ for idx, row in df.iterrows():
     if  len(jsonPaper[idx]['annotation'])==0:
         jsonPaper[idx]['annotation'].append('none')
 
+    jsonPaper[idx]['ref'] = row['First author last name'] + jsonPaper[idx]['year'] + row['Title'].split(' ')[0]
+
     jsonPaper[idx]['style']=['ax']
 
     

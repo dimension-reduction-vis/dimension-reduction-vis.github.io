@@ -16,8 +16,8 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single clusters",
@@ -41,9 +41,9 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "gr",
+            "legend",
+            "axis",
+            "grid",
             "gs"
         ],
         "interpretation": [
@@ -69,14 +69,14 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single points",
             "compare points",
             "single clusters",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2021
     },
@@ -96,14 +96,14 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "sm"
+            "legend",
+            "axis",
+            "small multiples"
         ],
         "interpretation": [
             "single clusters",
             "gp",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2020
     },
@@ -146,10 +146,10 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
+            "legend",
+            "axis",
             "gs",
-            "sm"
+            "small multiples"
         ],
         "interpretation": [
             "single clusters",
@@ -175,8 +175,8 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax"
+            "legend",
+            "axis"
         ],
         "interpretation": [
             "single clusters",
@@ -202,10 +202,10 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
+            "legend",
+            "axis",
             "gs",
-            "sm"
+            "small multiples"
         ],
         "interpretation": [
             "single clusters",
@@ -231,7 +231,7 @@
             "caption"
         ],
         "style": [
-            "ax"
+            "axis"
         ],
         "interpretation": [
             "compare clusters"
@@ -254,8 +254,8 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "compare clusters",
@@ -278,8 +278,8 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single clusters"
@@ -301,13 +301,13 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "sm"
+            "legend",
+            "axis",
+            "small multiples"
         ],
         "interpretation": [
             "gp",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2020
     },
@@ -328,13 +328,13 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single clusters",
             "compare clusters",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2021
     },
@@ -356,8 +356,8 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single points",
@@ -382,8 +382,8 @@
             "caption"
         ],
         "style": [
-            "ax",
-            "gr"
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "single points",
@@ -412,16 +412,16 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "gr",
-            "sm"
+            "legend",
+            "axis",
+            "grid",
+            "small multiples"
         ],
         "interpretation": [
             "compare points",
             "single clusters",
             "compare clusters",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2020
     },
@@ -440,8 +440,8 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
+            "legend",
+            "axis",
             "gs"
         ],
         "interpretation": [
@@ -467,15 +467,15 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
+            "legend",
+            "axis",
             "gs",
-            "sm"
+            "small multiples"
         ],
         "interpretation": [
             "compare clusters",
             "gp",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2022
     },
@@ -496,15 +496,15 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "sm"
+            "legend",
+            "axis",
+            "small multiples"
         ],
         "interpretation": [
             "single points",
             "single clusters",
             "compare clusters",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2022
     },
@@ -523,13 +523,13 @@
             "caption"
         ],
         "style": [
-            "le",
-            "ax",
-            "gr"
+            "legend",
+            "axis",
+            "grid"
         ],
         "interpretation": [
             "compare clusters",
-            "rov"
+            "relations to other variables"
         ],
         "year": 2018
     },
@@ -550,8 +550,9 @@
         "annotation": [
             "none"
         ],
+        "ref": "Wei2021A",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -571,8 +572,9 @@
         "annotation": [
             "caption"
         ],
+        "ref": "Xu2020A",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -594,8 +596,9 @@
         "annotation": [
             "caption"
         ],
+        "ref": "Manco2021Clump",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -611,7 +614,7 @@
         ],
         "interpretation": [
             "single points",
-            "compare poitns",
+            "compare points",
             "compare clusters",
             "global"
         ],
@@ -620,8 +623,9 @@
             "highlight",
             "caption"
         ],
+        "ref": "Kuchroo2022Multiscale",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -642,8 +646,9 @@
             "highlight",
             "caption"
         ],
+        "ref": "Aissa2021Single-cell",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -665,8 +670,9 @@
             "highlight",
             "caption"
         ],
+        "ref": "Maghlaperidze2021Development",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -686,8 +692,9 @@
         "annotation": [
             "none"
         ],
+        "ref": "Riccioli2020Indicators",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -707,8 +714,9 @@
         "annotation": [
             "none"
         ],
+        "ref": "Hetenyi2019Quantitative",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -729,8 +737,9 @@
         "annotation": [
             "label"
         ],
+        "ref": "Stefko2021The",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -750,8 +759,9 @@
         "annotation": [
             "none"
         ],
+        "ref": "Llorente-Barroso2023The",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -763,6 +773,7 @@
             "3d",
             "2d"
         ],
+        "ref": "Collins2020compare",
         "dr": [
             "pca"
         ],
@@ -774,7 +785,7 @@
             "caption"
         ],
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -795,8 +806,9 @@
             "label",
             "caption"
         ],
+        "ref": "Duan2021Genotypic",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -816,8 +828,9 @@
         "annotation": [
             "label"
         ],
+        "ref": "Yuan2020Modification",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -838,8 +851,9 @@
             "label",
             "caption"
         ],
+        "ref": "Schievano2020NMR",
         "style": [
-            "ax"
+            "axis"
         ]
     },
     {
@@ -856,13 +870,927 @@
             "umap"
         ],
         "interpretation": [
+            "none"
+        ],
+        "annotation": [
+            "label"
+        ],
+        "ref": "Mazher2020Visualization",
+        "style": [
+            "axis"
+        ]
+    },
+    {
+        "subject_area": "bio",
+        "venue": "Cell Research",
+        "name": "Discriminating mild from critical COVID-19 by innate and adaptive immune single-cell profiling of bronchoalveolar lavages",
+        "ref": "wauters2021discriminating",
+        "year": 2021,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "umap"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "small multiples"
+        ],
+        "interpretation": [
+            "single clusters",
             "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "bio",
+        "venue": "Nature Communications",
+        "name": "Coordinated host-pathogen transcriptional dynamics revealed using sorted subpopulations and single macrophages infected with Candida albicans",
+        "ref": "munoz2019coordinated",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "gs"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "relations to other variables"
+        ]
+    },
+    {
+        "subject_area": "bio",
+        "venue": "Nature Communications",
+        "name": "scRNA-seq in medulloblastoma shows cellular heterogeneity and lineage expansion support resistance to SHH inhibitor therapy",
+        "ref": "ocasio2019scrnaseq",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "tsne"
+        ],
+        "annotation": [
+            "label",
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "gp"
+        ]
+    },
+    {
+        "subject_area": "bio",
+        "venue": "Journal of Dairy Science",
+        "name": "Evaluation of indigenous lactic acid bacteria of raw mare milk from pastoral areas in Xinjiang, China, for potential use in probiotic fermented dairy products",
+        "ref": "jin2021evaluation",
+        "year": 2021,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ],
+        "interpretation": [
+            "single points",
+            "gp"
+        ]
+    },
+    {
+        "subject_area": "bio",
+        "venue": "Analytical and Bioanalytical Chemistry",
+        "name": "Discrimination of grass pollen of different species by FTIR spectroscopy of individual pollen grains",
+        "ref": "diehn2020discrimination",
+        "year": 2020,
+        "vis": [
+            "2d",
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "axis",
+            "gs"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "busi",
+        "venue": "Journal of Cleaner Production",
+        "name": "Insights into the potential release of dissolved organic matter from different agro-forest waste-derived hydrochars: A pilot study",
+        "ref": "ji2021insights",
+        "year": 2021,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "busi",
+        "venue": "Journal of Business Economics and Management",
+        "name": "COMPOSITE FINANCIAL PERFORMANCE INDEX PREDICTION \u2013 A NEURAL NETWORKS APPROACH",
+        "ref": "sabaupopa2021composite",
+        "year": 2021,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis",
+            "grid"
+        ],
+        "interpretation": [
+            "gp"
+        ]
+    },
+    {
+        "subject_area": "busi",
+        "venue": "Technological Forecasting and Social Change",
+        "name": "Mining and investigating the factors influencing crowdfunding success",
+        "ref": "song2019mining",
+        "year": 2019,
+        "vis": [
+            "3d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid",
+            "small multiples"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "outliers"
+        ]
+    },
+    {
+        "subject_area": "busi",
+        "venue": "Oeconomia Copernicana",
+        "name": "Analysis of modern methods for increasing and managing the financial prosperity of businesses in the context of performance: a case study of the tourism sector in Slovakia",
+        "ref": "onuferova2020analysis",
+        "year": 2020,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "highlight"
+        ],
+        "style": [
+            "axis",
+            "grid"
+        ],
+        "interpretation": [
+            "gp",
+            "outliers"
+        ]
+    },
+    {
+        "subject_area": "chem",
+        "venue": "Applied Biological Chemistry",
+        "name": "Global metabolite profiling based on GC\u2013MS and LC\u2013MS/MS analyses in ABF3-overexpressing soybean with enhanced drought tolerance",
+        "ref": "nam2019global",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis",
+            "gs"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "relations to other variables"
+        ]
+    },
+    {
+        "subject_area": "chem",
+        "venue": "Journal of the Brazilian Chemical Society",
+        "name": "Metabolomics-Based Discovery of Biomarkers with Cytotoxic Potential in Extracts of Myracrodruon urundeuva",
+        "ref": "castro2020metabolomics",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "chem",
+        "venue": "Nature Communications",
+        "name": "scm6A-seq reveals single-cell landscapes of the dynamic m6A during oocyte maturation and early embryonic development",
+        "ref": "yao2023scm6aseq",
+        "year": 2023,
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "umap"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "chem",
+        "venue": "Nature Communications",
+        "name": "Globally correlated conformational entropy underlies positive and negative cooperativity in a kinase\u2019s enzymatic cycle",
+        "ref": "wang2019globally",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis",
+            "gs"
+        ],
+        "interpretation": [
+            "single points",
+            "compare points"
+        ]
+    },
+    {
+        "subject_area": "chem",
+        "venue": "Food Analytical Methods",
+        "name": "Interpreting and Reporting Principal Component Analysis in Food Science Analysis and Beyond",
+        "ref": "cozzolino2019interpreting",
+        "year": 2019,
+        "vis": [
+            "2d",
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "gs"
+        ],
+        "interpretation": [
+            "none"
+        ]
+    },
+    {
+        "subject_area": "phys",
+        "venue": "SN Applied Sciences",
+        "name": "Accumulation and distribution of heavy metals in soil and food crops around the ship breaking area in southern Bangladesh and associated health risk assessment",
+        "ref": "hasan2020accumulation",
+        "year": 2020,
+        "vis": [
+            "3d",
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ],
+        "interpretation": [
+            "single points"
+        ]
+    },
+    {
+        "subject_area": "phys",
+        "venue": "Astronomy & Astrophysics",
+        "name": "New metric to quantify the similarity between planetary systems: application to dimensionality reduction using T-SNE",
+        "ref": "alibert2019new",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "tsne",
+            "other"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "phys",
+        "venue": "Nature Communications",
+        "name": "Dynamic molecular changes during the first week of human life follow a robust developmental trajectory",
+        "ref": "lee2019dynamic",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ],
+        "interpretation": [
+            "compare clusters"
+        ]
+    },
+    {
+        "subject_area": "phys",
+        "venue": "Nature Communications",
+        "name": "Pattern decorrelation in the mouse medial prefrontal cortex enables social preference and requires MeCP2",
+        "ref": "xu2022pattern",
+        "year": 2022,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "other"
+        ],
+        "annotation": [
+            "highlight"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ],
+        "interpretation": [
+            "gp"
+        ]
+    },
+    {
+        "subject_area": "phys",
+        "venue": "Biosensors",
+        "name": "Innovative Sensor Approach to Follow Campylobacter jejuni Development",
+        "ref": "nunezcarmona2019innovative",
+        "year": 2019,
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "gs"
+        ],
+        "interpretation": [
+            "single points",
+            "gp",
+            "outliers"
+        ]
+    },
+    {
+        "name": "An untargeted metabolomic strategy based on liquid chromatography-mass spectrometry to study high glucose-induced changes in HK-2 cells",
+        "subject_area": "bio",
+        "ref": "bernardo-bermejo2019untargeted",
+        "venue": "Journal of Chromatography A",
+        "year": "2019",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "single clusters",
+            "compare clusters"
+        ],
+        "annotation": [
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Analysis of Structural Variants Reveal Novel Selective Regions in the Genome of Meishan Pigs by Whole Genome Sequencing",
+        "subject_area": "bio",
+        "ref": "du2021analysis",
+        "venue": "Frontiers in Genetics",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "single clusters",
+            "compare clusters"
+        ],
+        "annotation": [
+            "none"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "gs",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Beneficial effects of exercise on gut microbiota functionality and barrier integrity, and gut-liver axis crosstalk in an in vivo model of early obesity and NAFLD",
+        "subject_area": "bio",
+        "ref": "carbajo-pescador2019beneficial",
+        "venue": "Disease Models and Mechanisms",
+        "year": "2019",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "others"
+        ],
+        "interpretation": [
+            "single clusters",
+            "compare clusters",
+            "global"
+        ],
+        "annotation": [
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid",
+            "gs"
+        ]
+    },
+    {
+        "name": "Decoding the annulus fibrosus cell atlas by scRNA-seq to develop an inducible composite hydrogel: A novel strategy for disc reconstruction",
+        "subject_area": "bio",
+        "ref": "wang2022decoding",
+        "venue": "Bioactive Materials",
+        "year": "2022",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "tsne"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Mesenchymal and adrenergic cell lineage states in neuroblastoma possess distinct immunogenic phenotypes",
+        "subject_area": "bio",
+        "ref": "sengupta2022mesenchymal",
+        "venue": "Nature Cancer",
+        "year": "2022",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca",
+            "umap"
+        ],
+        "interpretation": [
+            "single clusters",
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "A Machine Learning Method for the Detection of Brown Core in the Chinese Pear Variety Huangguan Using a MOS-Based E-Nose",
+        "subject_area": "chem",
+        "ref": "wei2020machine",
+        "venue": "Sensors",
+        "year": "2020",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis"
+        ]
+    },
+    {
+        "name": "Accelerating vinegar aging by combination of ultrasonic and magnetic field assistance",
+        "subject_area": "chem",
+        "ref": "li2021accelerating",
+        "venue": "Ultrasonics Sonochemistry",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label",
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid"
+        ]
+    },
+    {
+        "name": "Analysis of the Effect of Thermal Runaway Initiation Conditions on the Severity of Thermal Runaway—Numerical Simulation and Machine Learning Study",
+        "subject_area": "chem",
+        "ref": "kriston2020analysis",
+        "venue": "Journal of The Electrochemical Society",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid",
+            "gs",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Analysis of the Volatile Components in Selaginella doederleinii by Headspace Solid Phase Microextraction-Gas Chromatography-Mass Spectrometry",
+        "subject_area": "chem",
+        "ref": "ma2019analysis",
+        "venue": "Molecules",
+        "year": "2021",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "single clusters",
+            "compare clusters",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label",
+            "highlight",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "axis",
+            "grid"
+        ]
+    },
+    {
+        "name": "Understanding the diversity of the metal-organic framework ecosystem",
+        "subject_area": "chem",
+        "ref": "moosavi2020understanding",
+        "venue": "Nature Communications",
+        "year": "2020",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "tsne"
+        ],
+        "interpretation": [
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Identifying galaxies, quasars, and stars with machine learning: A new catalogue of classifications for 111 million SDSS sources without spectra",
+        "subject_area": "phys",
+        "ref": "clarke2020identifying",
+        "venue": "Astronomy and Astrophysics",
+        "year": "2020",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "umap"
+        ],
+        "interpretation": [
+            "compare points",
+            "single clusters",
+            "compare clusters",
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Monitoring Influent Measurements at Water Resource Recovery Facility Using Data-Driven Soft Sensor Approach",
+        "subject_area": "phys",
+        "ref": "cheng2019monitoring",
+        "venue": "IEEE Sensors Journal",
+        "year": "2019",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "legend",
+            "gs",
+            "small multiples"
+        ]
+    },
+    {
+        "name": "Radiometric approach for the detection of picophytoplankton assemblages across oceanic fronts",
+        "subject_area": "phys",
+        "ref": "lange2020radiometric",
+        "venue": "Optics Express",
+        "year": "2020",
+        "vis": [
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ]
+    },
+    {
+        "name": "Synchronous 500-year oscillations of monsoon climate and human activity in Northeast Asia",
+        "subject_area": "phys",
+        "ref": "xu2019synchronous",
+        "venue": "Nature Communications",
+        "year": "2019",
+        "vis": [
+            "1d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "global",
+            "relations to other variables"
+        ],
+        "annotation": [
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ]
+    },
+    {
+        "name": "Determinants of coopetition and contingency of strategic choices: the case of professional football clubs in France",
+        "subject_area": "busi",
+        "ref": "feuillet2021determinants",
+        "venue": "European Sport Management Quarterly",
+        "year": "2018",
+        "vis": [
+            "2d"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label",
+            "caption"
+        ],
+        "style": [
+            "axis"
+        ]
+    },
+    {
+        "name": "Environmental impacts of milk production and processing in the Eastern Alps: A \"cradle-to-dairy gate\" LCA approach",
+        "subject_area": "busi",
+        "ref": "berton2021environmental",
+        "venue": "Journal of Cleaner Production",
+        "year": "2018",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "relations to other variables"
         ],
         "annotation": [
             "label"
         ],
         "style": [
-            "ax"
+            "axis"
+        ]
+    },
+    {
+        "name": "Evaluation of food labelling usefulness for consumers",
+        "subject_area": "busi",
+        "ref": "moreira2019evaluation",
+        "venue": "International Journal of Consumer Studies",
+        "year": "2019",
+        "vis": [
+            "2d",
+            "2d+"
+        ],
+        "dr": [
+            "pca"
+        ],
+        "interpretation": [
+            "relations to other variables"
+        ],
+        "annotation": [
+            "label"
+        ],
+        "style": [
+            "axis"
         ]
     }
 ]
