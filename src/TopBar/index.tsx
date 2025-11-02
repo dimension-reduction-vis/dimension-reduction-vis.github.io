@@ -23,12 +23,13 @@ import { useStyles } from "./style";
 interface Props {
   menuId: string;
   handleDrawerToggle: () => void;
+  handleModalToggle: () => void;
   onProfileMenuOpen: (e: React.MouseEvent<HTMLElement>) => void;
 }
 
 export function TopBar(props: Props) {
   const classes = useStyles();
-  const { menuId, onProfileMenuOpen, handleDrawerToggle } = props;
+  const { menuId, onProfileMenuOpen, handleDrawerToggle, handleModalToggle } = props;
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -43,20 +44,26 @@ export function TopBar(props: Props) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap className={classes.title}>
-          STAR Report: Visualization and Interpretation of Dimension Reduction
+          Paper Browser: A Critical Analysis of the Usage of Dimensionality Reduction in Four Domains by Cashman et al.
         </Typography>
 
         <div className={classes.sectionDesktop}>
 
-          {/* <IconButton
-            edge="end"
-            aria-label="link to arxiv paper"
-            aria-haspopup="true"
-            onClick={()=>window.open("https://arxiv.org/abs/2012.00467")}
+          <a 
+            href="assets/pdfs/A_Critical_Analysis_of_the_Usage_of_Dimensionality_Reduction_in_Four_Domains_preprint-web-version.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
             color="inherit"
           >
-            <Description /> <span style={{fontSize: '12px'}} className={classes.iconName}>{' '}Preprint </span>
-          </IconButton> */}
+            <IconButton
+              edge="end"
+              aria-label="download paper and supplemental material"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <Description /> <span style={{fontSize: '12px'}} className={classes.iconName}>{' '}Paper + Supp. Material </span>
+            </IconButton>
+          </a>
 
           <IconButton
             edge="end"
